@@ -1,0 +1,5 @@
+LIBRARY Dll1
+EXPORTS
+    GetFrameBorderWidth @1
+    GetFrameBorderHeight    @2
+    GetTitleBarHeight   @3

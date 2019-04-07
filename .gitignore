@@ -1,0 +1,9 @@
+obj
+a.txt
+*.o
+*.s
+*.bak
+x64
+.vs
+*.vcxproj
+*.vcxproj.*
