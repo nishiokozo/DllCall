@@ -5,5 +5,3 @@ a.txt
 *.bak
 x64
 .vs
-*.vcxproj
-*.vcxproj.*

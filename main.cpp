@@ -1,6 +1,4 @@
-﻿// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+﻿//2019/04/07
 #include "pch.h"
 #include <iostream>
 using namespace std;
