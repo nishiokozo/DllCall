@@ -1,6 +1,22 @@
+#include <windows.h>
 #include <iostream>
-#include "dllfunc.h"
+using namespace std;
+
+typedef void (*FUNC)();
+
 int main(void)
 {
-	dllfunc();
+	HMODULE hModule = LoadLibrary("dllfunc.dll");
+	FUNC func = (FUNC)GetProcAddress(hModule, "func");
+
+	if ( func ) 
+	{
+		func();
+	}
+	else
+	{
+		cout << " no dllfunc.dll " << endl;
+	}
+
+	FreeLibrary(hModule);
 }

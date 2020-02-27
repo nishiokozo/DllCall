@@ -1,9 +1,10 @@
 
+all:	dllfunc.dll main.exe
 
-main.exe: main.cpp dllfunc.h dllfunc.dll
-	g++ main.cpp dllfunc.dll -o main.exe
+main.exe: main.cpp
+	g++ main.cpp -o main.exe
 	
-dllfunc.dll: dllfunc.cpp dllfunc.h
+dllfunc.dll: dllfunc.cpp
 	g++ dllfunc.cpp -o dllfunc.dll -shared
 
 clean:

@@ -1,8 +1,7 @@
 #include <iostream>
-#include "dllfunc.h"
 using namespace std;
 
-void dllfunc()
+extern "C" __declspec(dllexport) void __stdcall func()
 {
 	cout << " dll called " << endl;
 }
