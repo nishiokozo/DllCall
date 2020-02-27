@@ -3,5 +3,6 @@ a.txt
 *.o
 *.s
 *.bak
+*.dll
 x64
 .vs
