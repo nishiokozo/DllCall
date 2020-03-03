@@ -1,11 +1,11 @@
 
-all:	dllfunc.dll main.exe
+all:	foo.dll main.exe
 
 main.exe: main.cpp
 	g++ main.cpp -o main.exe
 	
-dllfunc.dll: dllfunc.cpp
-	g++ dllfunc.cpp -o dllfunc.dll -shared
+foo.dll: foo.cpp
+	g++ foo.cpp -o foo.dll -shared
 
 clean:
 	rm -f *.o

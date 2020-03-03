@@ -4,5 +4,6 @@ a.txt
 *.s
 *.bak
 *.dll
+*.exe
 x64
 .vs

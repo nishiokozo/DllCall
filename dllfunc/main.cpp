@@ -5,7 +5,7 @@ typedef void (*FUNC)();
 
 int main(void)
 {
-	HMODULE hModule = LoadLibrary("dllfunc.dll");
+	HMODULE hModule = LoadLibrary("foo.dll");
 	FUNC func = (FUNC)GetProcAddress(hModule, "func");
 	if ( func ) 
 	{
@@ -13,7 +13,7 @@ int main(void)
 	}
 	else
 	{
-		cout << " no dllfunc.dll " << endl;
+		cout << " no foo.dll " << endl;
 	}
 	FreeLibrary(hModule);
 
