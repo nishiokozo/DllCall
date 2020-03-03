@@ -26,4 +26,3 @@ extern "C" __declspec(dllexport)  Foo* GetInstance()
 
 	return new Foo();
 }
-}
