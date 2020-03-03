@@ -12,9 +12,18 @@ Foo::Foo()
 {
 	cout << "Foo()" << endl;
 }
+Foo::~Foo()
+{
+	cout << "~Foo()" << endl;
+}
 void Foo::a()
 {
 	cout << "Foo::a()" << endl;
+}
+void Foo::Delete()
+{
+	cout << "Foo::delete()" << endl;
+	delete this;
 }
 
 

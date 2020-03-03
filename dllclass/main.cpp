@@ -28,4 +28,5 @@ int main()
 	
 	foo->a();
 
+	foo->Delete();
 }
